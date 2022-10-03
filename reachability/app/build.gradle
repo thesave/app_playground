@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+application {
+    mainClass = 'reachability.ReachAffinity'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'reachability.ReachAffinity'
+    }
+}
