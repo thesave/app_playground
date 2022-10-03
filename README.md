@@ -6,7 +6,7 @@ Premutation-based algorithm to check reachability of a function dependency graph
 Download the compiled version from the [Releases](https://github.com/thesave/app_playground/releases) menu.
 
 Command:
-`java -jar reachability.jar path/to/nodelist.txt [--debug]`
+`java -jar reachability.jar path/to/nodelist.txt 10 [--debug]`
 
 The nodelist format assumes that the first line corresponds to the root of the DAG.
 
