@@ -8,7 +8,8 @@ Download the compiled version from the [Releases](https://github.com/thesave/app
 Command:
 `java -jar reachability.jar path/to/nodelist.txt [--debug]`
 
-The nodelist format assumes no comments and that the first line corresponds to the root of the DAG.
+The nodelist format assumes that the first line corresponds to the root of the DAG.
+
 You can look at an example in the project's folder: [nodeList_example.txt](https://github.com/thesave/app_playground/blob/main/reachability/nodeList_example.txt)
 
 Nodelist format:
