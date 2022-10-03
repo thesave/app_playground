@@ -34,12 +34,17 @@ public class ReachAffinity {
 			System.out.println( "Provide a path to a nodelist file as first argument");
 			System.exit( 1 );
 		}
+		if ( args.length < 2 ){
+			System.out.println( "Provide the capacity of the target worker as second argument");
+			System.exit( 1 );
+		}
 		String nodeList = Files.readString( Path.of( args[ 0 ] ) );
+		int capacity = Integer.parseInt( args[ 1 ] );
 		Graph g = Graph.parse( nodeList );
-		if ( args.length > 1 && args[1].equals( "--debug" ) ){
+		if ( args.length > 2 && args[ 2 ].equals( "--debug" ) ){
 			System.out.println( "Parsed: " + g );
 		}
-		canReach( g, 10, true );
+		canReach( g, capacity, true );
 		System.exit( 0 );
 	}
 
